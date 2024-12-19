@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="bg-gray-100 h-screen flex justify-center items-center">
+    <div
+      id="wrapper"
+      class="flex flex-col justify-center items-center bg-white p-6 rounded-2xl shadow-2xl w-full max-w-sm"
+    >
+      <input
+        type="text"
+        id="userInput"
+        class="p-2 border border-gray-300 rounded-md w-full"
+        placeholder="Your value"
+      />
+      <div id="modes" class="flex">
+        <button
+          onclick="append()"
+          id="add"
+          class="font-semibold text-gray-700 text-1xl outline m-3 p-2 w-24 rounded-lg bg-white shadow-lg hover:-translate-y-2 transition"
+        >
+          add
+        </button>
+        <button
+          onclick="remove()"
+          id="remove"
+          class="font-semibold text-gray-700 text-1xl outline m-3 p-2 w-24 rounded-lg bg-white shadow-lg hover:-translate-y-2 transition"
+        >
+          remove
+        </button>
+        <!-- <button
+          onclick="reset()"
+          id="add"
+          class="font-semibold text-gray-700 text-1xl outline m-3 p-2 w-24 rounded-lg bg-white shadow-lg hover:-translate-y-2 transition"
+        >
+          reset
+        </button> -->
+      </div>
+      <div id="content" class="">
+        <ol id="list" class="list-decimal">
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
